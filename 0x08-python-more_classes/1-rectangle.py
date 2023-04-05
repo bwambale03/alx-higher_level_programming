@@ -38,14 +38,12 @@ class Rectangle:
                 raise VlueError("width must be >= 0")
             self.__width = value
 
-
             @property
             def height(self):
                 """
                 function to return height if setter checks have passed
                 """
                 return self.__height
-
 
             @height.setter
             def height(self, value):
