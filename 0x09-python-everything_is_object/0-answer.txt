@@ -1,6 +1,2 @@
 #!/usr/bin/python3
-"""
-function that printd the type of an object without the double parenthesis
-"""
 type
-
