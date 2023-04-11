@@ -2,7 +2,7 @@
 """DEfines an Integer addition function"""
 
 
-def add_int(a, b=98):
+def add_integer(a, b=98):
     """
     Return the integre addition of a and b
 
