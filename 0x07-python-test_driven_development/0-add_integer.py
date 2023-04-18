@@ -5,7 +5,7 @@
 def add_integer(a, b=98):
     """
     Return the integre addition of a and b
-
+i
     Float agruments are typecasted to int before addittion is performed
 
     Raises:
