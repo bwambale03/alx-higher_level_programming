@@ -109,12 +109,12 @@ And again with NaN numbers.
 
 ::
 
->>> add_integer(float('nan'))
+>>> add_integer(float('NaN'))
 Traceback(most recent call last):
 ValueError: cannot convert float NaN to integer
 
 ::
 
->>> add_integer(2, foat('nan'))
+>>> add_integer(2, float('NaN'))
 Traceback(most recent call last):
 ValueError: cannot convert float NaN to integer
