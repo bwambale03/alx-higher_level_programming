@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""DEfines an Integer addition function"""
+"""Defines an Integer addition function"""
 
 
 def add_integer(a, b=98):
     """
-    Return the integre addition of a and b
-i
+    Return the integer addition of a and b
+
     Float agruments are typecasted to int before addittion is performed
 
     Raises:

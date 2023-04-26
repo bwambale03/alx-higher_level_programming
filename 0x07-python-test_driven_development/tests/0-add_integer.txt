@@ -1,5 +1,5 @@
 -------------------
-How to use 0-add_integer.txt
+How to use 0-add_integer.py
 -------------------
 
 This module defines an integer addition function "add_integer(a, b=98)".
@@ -7,7 +7,7 @@ This module defines an integer addition function "add_integer(a, b=98)".
 Usage
 ------
 
-add_integer(...) returns the addition of the two arguments. For numbers,
+''add_integer(...)''' returns the addition of the two arguments. For numbers,
 that value is equivalent to using the ''+'' operator.
 
 ::
@@ -57,20 +57,20 @@ The second arg is optional-by default it is 98
 Non-numbers
 ------------
 
-"add_integer()" expects tat both args are are either integers or floats
-If either arg is non-Int or Non-Float, a TypeError is raised:
+"add_integer()" expects that both args are are either integers or floats
+If either argument is non-integer or non-float, a TypeError is raised:
 
 ::
 
 >>> add_integer("hello", 3)
 Traceback(most recent call last):
-TypeError: a musy be an integer
+TypeError: a must be an integer
 
 ::
 
 >> add_integer(2, "hello")
 Traceback(most recent call last):
-TypeError: b ust be an integer
+TypeError: b must be an integer
 
 ::
 
@@ -109,12 +109,12 @@ And again with NaN numbers.
 
 ::
 
->>> add_integer(float('NaN'))
+>>> add_integer(float('nan'))
 Traceback(most recent call last):
 ValueError: cannot convert float NaN to integer
 
 ::
 
->>> add_integer(2, float('NaN'))
+>>> add_integer(2, float('nan'))
 Traceback(most recent call last):
 ValueError: cannot convert float NaN to integer
