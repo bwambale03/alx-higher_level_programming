@@ -1,5 +1,4 @@
 #include "Python.h"
-
 /**
  * print_python_string-a function that prints Python strings.
  * print_python_string - Prints information about Python strings.
