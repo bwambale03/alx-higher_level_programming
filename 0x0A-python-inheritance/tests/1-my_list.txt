@@ -154,7 +154,7 @@ Nothing to sort with empty lists.
 
 ::
 
-    >>> my_list = MyList()
+    >>> my_list=MyList()
     >>> my_list.print_sorted()
     []
 
@@ -167,4 +167,3 @@ will be raised.
     >>> my_list.print_sorted()
     Traceback (most recent call last):
     TypeError: unorderable types: str() < int()
-
