@@ -1,4 +1,4 @@
---Script Lists all genres in the database hbtn_0d_tvshows_rate by their rating.
+-- Script Lists all genres in the database hbtn_0d_tvshows_rate by their rating.
 -- Records are ordered by descending rating.
 SELECT `name`, SUM(`rate`) AS `rating`
   FROM `tv_genres` AS g
