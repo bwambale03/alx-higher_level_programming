@@ -8,4 +8,4 @@ function printFunction(){
 	console.log("Executing theFunction");
 }
 
-exports.callMemoby(3, printFunction);
+exports.callMeMoby(3, printFunction);
