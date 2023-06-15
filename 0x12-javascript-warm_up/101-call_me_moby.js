@@ -5,7 +5,7 @@ exports.callMeMoby = function(x, theFunction) {
 };
 
 function printFunction(){
-	console.log("Executing theFunction");
+	console.log('Executing theFunction');
 }
 
 exports.callMeMoby(3, printFunction);
