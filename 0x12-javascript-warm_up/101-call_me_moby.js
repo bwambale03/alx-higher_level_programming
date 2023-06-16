@@ -11,7 +11,7 @@ function printFunction(){
 exports.callMeMoby(3, printFunction);
 */
 
-function executeXtimes(x, theFunction) {
+/*function executeXtimes(x, theFunction) {
 	for (let i = 0; i < x; i++) {
 		theFunction();
 	}
@@ -24,3 +24,7 @@ function printFunction() {
 module.exports = executeXtimes; // Exporting the function
 
 executeXtimes(5, printFunction);
+*/
+exports.callMeMoby = function (x, theFunction) {
+  for (let i = 0; i < x; i++) theFunction();
+};
