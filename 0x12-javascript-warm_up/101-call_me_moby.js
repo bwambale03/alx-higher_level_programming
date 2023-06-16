@@ -21,4 +21,6 @@ function printFunction() {
 	console.log('Executing theFunction');
 }
 
+module.exports = executeXtimes; // Exporting the function
+
 executeXtimes(5, printFunction);
