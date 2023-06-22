@@ -7,7 +7,7 @@ module.exports = class Rectangle {
     }
   }
 
-  print() {
+  print () {
     if (this.width === undefined || this.height === undefined) {
       console.log('Empty rectangle');
     } else {
