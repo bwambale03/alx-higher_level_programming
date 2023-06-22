@@ -1,22 +1,23 @@
 #!/usr/bin/node
 module.exports = class Rectangle {
-	constructor (w, h) {
+  constructor(w, h) {
+    if (w > 0 && h > 0) {
+      this.width = w;
+      this.height = h;
+    }
+  }
 
-		if (Number.isInteger(w) && w > 0 && Number.isInteger(h) && h > 0) {
-			this.width = w;
-			this.height = h;
-
-			object = {
-				// empty object
-			}
-	}
-		print() {
-			if (this.width === 0 || this.height === 0) {
-				console.log('Empty Reactangle');
-			} else {
-				for (let i = 0; i < this.length; i++) {
-					console.log('X'.repeat(this.width));
-				}
-			}
-		}
-};
+  print() {
+    if (this.width === undefined || this.height === undefined) {
+      console.log("Empty rectangle");
+    } else {
+      for (let i = 0; i < this.height; i++) {
+        let row = "";
+        for (let j = 0; j < this.width; j++) {
+          row += "X";
+        }
+        console.log(row);
+      }
+    }
+  }
+}
