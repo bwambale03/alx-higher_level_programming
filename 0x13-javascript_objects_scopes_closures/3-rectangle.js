@@ -9,12 +9,12 @@ module.exports = class Rectangle {
 
   print() {
     if (this.width === undefined || this.height === undefined) {
-      console.log("Empty rectangle");
+      console.log('Empty rectangle');
     } else {
       for (let i = 0; i < this.height; i++) {
-        let row = "";
+        let row = '';
         for (let j = 0; j < this.width; j++) {
-          row += "X";
+          row +='X;
         }
         console.log(row);
       }
