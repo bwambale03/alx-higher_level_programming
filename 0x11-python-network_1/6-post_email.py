@@ -26,7 +26,7 @@ def post_email(url, email):
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: . / 6 - post_email.py http: // 0.0.0.0: 5000 / post_email
-              hr @ holbertonschool.com")
+              hr@holbertonschool.com")
         sys.exit(1)
 
     url = sys.argv[1]
