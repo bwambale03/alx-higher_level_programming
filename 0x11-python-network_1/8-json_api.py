@@ -3,7 +3,8 @@
 """
 A script that:
 - takes in a letter as a command-line argument
-- sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter
+- sends a POST request to http://0.0.0.0:5000/search_user with the
+letter as a parameter
 - displays the response from the server
 """
 
