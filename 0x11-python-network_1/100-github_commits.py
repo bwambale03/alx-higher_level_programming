@@ -12,8 +12,8 @@ if __name__ == "__main__":
     # Construct the API URL using the provided repository and owner names
     repository_name = sys.argv[1]
     owner_name = sys.argv[2]
-    url = f"https://api.github.com/repos/" \
-        "{owner_name}/{repository_name}/commits"
+    url = "https://api.github.com/repos/{}/{}/commits".format(
+        owner_name, repository_name)
 
     # Send a GET request to the GitHub API
     response = requests.get(url)
@@ -29,6 +29,6 @@ if __name__ == "__main__":
             author_name = commit["commit"]["author"]["name"]
 
             # Print the commit SHA and author name
-            print(f"{commit_sha}: {author_name}")
+            print("{}: {}".format(commit_sha, author_name))
     except IndexError:
         pass
