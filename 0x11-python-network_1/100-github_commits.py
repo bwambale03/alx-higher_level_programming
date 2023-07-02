@@ -12,8 +12,8 @@ if __name__ == "__main__":
     # Construct the API URL using the provided repository and owner names
     repository_name = sys.argv[1]
     owner_name = sys.argv[2]
-    url = f"https://api.github.com/repos/{owner_name}/" \
-        "{repository_name}/commits"
+    url = f"https://api.github.com/repos/" \
+        "{owner_name}/{repository_name}/commits"
 
     # Send a GET request to the GitHub API
     response = requests.get(url)
