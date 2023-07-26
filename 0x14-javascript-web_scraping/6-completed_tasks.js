@@ -11,7 +11,8 @@ request(url, function (err, response, body) {
     const tasks = JSON.parse(body);
     for (const i in tasks) {
       const task = tasks[i];
-      if (task.completed === true) {
+      // Update the comparison to handle string 'true' as well
+      if (task.completed === true || task.completed === 'true') {
         if (completed[task.userId] === undefined) {
           completed[task.userId] = 1;
         } else {
@@ -21,6 +22,6 @@ request(url, function (err, response, body) {
     }
     console.log(completed);
   } else {
-    console.log('An error occured. Status code: ' + response.statusCode);
+    console.log('An error occurred. Status code: ' + response.statusCode);
   }
 });
