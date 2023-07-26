@@ -11,7 +11,6 @@ request(url, function (err, response, body) {
     const tasks = JSON.parse(body);
     for (const i in tasks) {
       const task = tasks[i];
-      // Update the comparison to handle string 'true' as well
       if (task.completed === true || task.completed === 'true') {
         if (completed[task.userId] === undefined) {
           completed[task.userId] = 1;
