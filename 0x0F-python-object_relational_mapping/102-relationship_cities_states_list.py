@@ -12,7 +12,12 @@ from sqlalchemy.orm import sessionmaker
 from relationship_state import State, Base
 from relationship_city import City
 
-if __name__ == "__main__":
+def main():
+    if len(sys.argv) != 4:
+        print("Usage: ./101-relationship_states_cities_list.py <mysql username> "
+              "<mysql password> <database name>")
+        return
+
     username = sys.argv[1]
     password = sys.argv[2]
     database_name = sys.argv[3]
@@ -25,11 +30,15 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    query = session.query(State, City).join(City).order_by(State.id, City.id).all()
+    states = session.query(State).order_by(State.id).all()
 
-    for state, city in query:
+    for state in states:
         print(f"{state.id}: {state.name}")
-        for city in state.cities:
+        cities = state.cities
+        for city in cities:
             print(f"    {city.id}: {city.name}")
 
     session.close()
+
+if __name__ == "__main__":
+    main()
