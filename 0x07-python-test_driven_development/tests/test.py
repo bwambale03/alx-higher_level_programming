@@ -1,3 +1,8 @@
-#!/usr/nin/python3
-def addition(2,5):
-    return 2 + 5
+#!/usr/bin/python3
+
+
+def addition(a, b):
+    return a + b
+
+result = addition(1, 2)
+print(result)
