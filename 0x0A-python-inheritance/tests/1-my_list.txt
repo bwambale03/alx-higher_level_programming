@@ -1,3 +1,4 @@
+
 # 1-my_list.txt
 
 =======================
@@ -143,7 +144,7 @@ Note that lists of strings are sorted lexographically.
     >>> my_list.print_sorted()
     ['Betty', 'Brennan', 'Holberton', 'Poppy', 'School']
 
-Another friendly reminder that the original list is unaltered :)
+Another friendly reminder that the original list is unaltered :
 
 ::
 
@@ -154,7 +155,7 @@ Nothing to sort with empty lists.
 
 ::
 
-    >>> my_list=MyList()
+    >>> my_list = MyList()
     >>> my_list.print_sorted()
     []
 
