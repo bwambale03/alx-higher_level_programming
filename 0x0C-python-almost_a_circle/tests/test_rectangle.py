@@ -797,11 +797,10 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         r2.update(**r1.to_dictionary())
         self.assertNotEqual(r1, r2)
 
-    def test_to_dictionary_arg(self):
+    def test__to_dicctionary(self):
         r = Rectangle(10, 2, 4, 1, 2)
         with self.assertRaises(TypeError):
             r.to_dictionary(1)
-
-
+            
 if __name__ == "__main__":
     unittest.main()
