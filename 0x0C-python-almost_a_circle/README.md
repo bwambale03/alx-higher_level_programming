@@ -7,7 +7,7 @@ Welcome to the "Almost A Circle" project. This project is part of the ALX Higher
 The project is structured as follows:
 
 - `models/`: This directory contains the Python modules that define the classes and methods for the project. Key components include:
-  - `base.py`: Contains the `Base` class, serving as the base class for other classes in the project.
+  - `base.py`: Concleatains the `Base` class, serving as the base class for other classes in the project.
   - `rectangle.py`: Defines the `Rectangle` class, inheriting from `Base`.
   - `square.py`: Defines the `Square` class, inheriting from `Rectangle`.
   - `__init__.py`: An initialization file to make Python treat the `models` directory as a package.
